@@ -18,5 +18,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin: 0;
+  background: url("../public/刻晴.png") no-repeat fixed center;
+  background-size: cover;
 }
 </style>

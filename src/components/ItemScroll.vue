@@ -123,6 +123,18 @@
     .item-table {
       width: 100%;
     }
-    
+    .el-table {
+      background: transparent;
+      .el-table__header {
+        th {
+          background: transparent !important;
+        }
+      }
+      .el-table__body {
+        td {
+          background: transparent !important;
+        }
+      }
+    }
   }
 </style>
