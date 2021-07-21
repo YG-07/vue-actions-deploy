@@ -1,5 +1,5 @@
 module.exports = {
   outputDir: 'build',
-  publicPath: '/',
+  publicPath: '/vue-actions-deploy',
   lintOnSave: true
 }
