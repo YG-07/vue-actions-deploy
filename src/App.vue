@@ -1,22 +1,13 @@
 <template>
   <div id="app">
-    <h2>Github.io 个人页面</h2>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  },
-  created() {
-    console.log('Hello Github.io');
-  }
+  name: 'App'
 }
 </script>
 
