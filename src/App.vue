@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h2>Github.io 个人页面</h2>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -12,6 +13,9 @@ export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  created() {
+    console.log('Hello Github.io');
   }
 }
 </script>
