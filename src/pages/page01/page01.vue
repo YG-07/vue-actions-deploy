@@ -4,13 +4,17 @@
     <el-page-header @back="$router.push('/mainIndex')" content="页面一"></el-page-header>
     <h3>这是页面一！</h3>
     <div>
-      输入底数m：<el-input type="number" style="width: 300px" v-model="mVal"></el-input>
+      <div>
+        输入底数m：<el-input type="number" style="width: 300px" v-model="mVal"></el-input>
+      </div>
+      <div>
+        输入底数n：<el-input type="number" style="width: 300px" v-model="nVal"></el-input>
+      </div>
+      <button @click="powewrmn">计算</button>
+      <br/>
+      <textarea v-model="strNum" style="width: 100%; height: 400px; font-size: 20px;"></textarea>
     </div>
-    <div>
-      输入底数n：<el-input type="number" style="width: 300px" v-model="nVal"></el-input>
-    </div>
-    <button @click="powewrmn">计算</button>
-    <br/>
+    
     <el-popover
         placement="top-start"
         title="标题"
@@ -66,6 +70,7 @@
       return {
         mVal: 1,
         nVal: 1,
+        strNum:'',
         activeIndex: '1',
         secretNum: 1260,
         navUrl,
@@ -113,7 +118,9 @@
         for (i=l-1;i>=0;i--){
           out += `${a[i]}`
         }
-        console.log(`${m}的${n}次方结果为${out}`);
+        let outStr = `${m}的${n}次方结果为${out}`
+        this.strNum = outStr
+        console.log(outStr);
       },
       open() {
         this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {

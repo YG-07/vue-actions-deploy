@@ -1,7 +1,7 @@
 <template>
   <div class="mainIndex">
     <nav-bar :url="navUrl" :activeIndex="activeIndex"/>
-    <test01/>
+    <!--<test01/>-->
     <item-scroll/>
     <hello-world />
   </div>

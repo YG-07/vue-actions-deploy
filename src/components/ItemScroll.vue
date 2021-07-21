@@ -97,9 +97,9 @@
       toScroll(bool) {
         let tmp = this.$el.querySelector('.el-table__body-wrapper')
         if(bool) {
-          tmp.scrollLeft -= 100
+          tmp.scrollLeft -= 200
         } else {
-          tmp.scrollLeft += 100
+          tmp.scrollLeft += 200
         }
       }
     }
@@ -114,14 +114,14 @@
     width: 100%;
     
     .item-scroll {
-      width: 60%;
+      width: 100%;
       margin: 1rem;
       display: flex;
       justify-content: space-evenly;
       
     }
     .item-table {
-      width: 60%;
+      width: 100%;
     }
     
   }

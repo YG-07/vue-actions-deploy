@@ -66,24 +66,27 @@
 </script>
 
 <style lang="less">
-  .el-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .el-form-item {
-      margin: 1rem;
+  .test01 {
+    width: 100%;
+    .el-form {
       display: flex;
-      justify-content: center;
-      .el-textarea__inner {
-        font-family: "Microsoft YaHei";
-      }
-      label, .el-button {
-        font-family: "Microsoft YaHei";
-        font-weight: bold;
-        /*字体 两端对齐*/
-        flex: 10rem 0 0;
-        text-align: justify;
-        text-align-last: justify;
+      flex-direction: column;
+      align-items: center;
+      .el-form-item {
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        .el-textarea__inner {
+          font-family: "Microsoft YaHei";
+        }
+        label, .el-button {
+          font-family: "Microsoft YaHei";
+          font-weight: bold;
+          /*字体 两端对齐*/
+          flex: 5rem 0 0;
+          text-align: justify;
+          text-align-last: justify;
+        }
       }
     }
   }

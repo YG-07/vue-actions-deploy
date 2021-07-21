@@ -14,5 +14,10 @@ export const navUrl = [
     index: '2',
     path: '/page02',
     label: '页面2',
+  },
+  {
+    index: '3',
+    path: '/pictrues',
+    label: '图片',
   }
 ]

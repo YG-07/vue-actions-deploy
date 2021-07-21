@@ -31,6 +31,14 @@ export const routes = [
       pageName: '页面二',
     },
     component: () => import('../pages/page02/page02.vue')
+  },
+  {
+    path: '/pictrues',
+    name: 'pictrues',
+    meta: {
+      pageName: '图片',
+    },
+    component: () => import('../pages/pictrues/pictrues.vue')
   }
 ]
 
